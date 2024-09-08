@@ -1,0 +1,80 @@
+.a1{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}  
+  .a1 img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    transition: all 0.3s ease;
+  }
+  .a1 img:hover { 
+    transform: perspective (100px); 
+    rotatey: (10deg);
+    cursor: pointer;
+  }
+  .b1:hover {
+    transform: scale(0.5);
+  }
+  .b2:hover {
+    transform: rotate(45deg);
+  }
+  .b3:hover {
+    transform: translate(50px);
+  }
+  .b4:hover {
+    transform: skewX(-20deg);
+  }
+  .b5:hover {
+    transform: perspective(100px) rotatex(10deg);
+    transition: transform 0.3s ease;
+  }
+  .b6:hover {
+    transform: perspective(100px) rotatey(10deg);
+     transition: transform 0.3s ease;
+  }.b7:hover {
+    transform: perspective(100px) rotatex(10deg);
+    transition: transform 0.3s ease;
+  }.b8:hover {
+    transform: perspective(100px) rotatey(-10deg);
+    transition: transform 0.3s ease;
+  }
+  button{
+   margin-left: 8px;
+   border: none;
+  }
+ .button1:hover{
+  background-color: black;
+  color: aliceblue;
+ }
+ .button2:hover{
+  box-shadow: 0 0 0 4px #c13232, 0 0 0 8px #e0e413;
+ }
+ .button3:hover{
+  border-top: 4px solid green ;
+  border-bottom: 4px solid green ;
+ }
+ .button4:hover{
+  border-left: 4px solid blue;
+  border-right: 4px solid blue;
+ 
+ }
+ .button5:hover{
+  background: radial-gradient(circle, #e9ed0a, #cd0096, #8832c1, #00c8ff);
+ }
+ h1{
+  animation: sss 5s infinite;
+  animation-direction: alternate ;
+  text-align: center;
+}
+
+@keyframes sss{
+  0%{
+      opacity: 0;
+  }
+  100%{
+      opacity: 80%;
+  }
+
+}

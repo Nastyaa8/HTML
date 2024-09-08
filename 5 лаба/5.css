@@ -1,0 +1,33 @@
+form{
+    width: 420px;
+    background-color: indigo;
+    padding-left: 30px;
+    margin:auto;
+    color:white;
+    font-size: 1.2em;
+  }
+    div.a1 {
+  padding-bottom: 15px;
+}
+div.a1 label {
+  display: block;
+  float: left;
+  width: 220px;
+  height: 15px;
+}
+    input[type="submit"] {
+      background-color: navy;
+      box-shadow: 0 0 4px white;
+      color: white;
+      
+    }
+    input[type="text"], input[type="email"]
+    {
+    background-color: rgba(255,255,255,.5);
+    color: white;
+    box-shadow: 0 0 10px white;
+    }  
+        input[type="text"]:focus{
+            background-color: rgb(85, 28, 94);
+            color:blueviolet;
+        }

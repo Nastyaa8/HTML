@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between  ;
+    align-items: stretch;
+    align-content: space-between;
+    max-width: 1500px;
+    min-width: 55px;
+    height: auto;
+    text-align: center;
+}
+div > div
+{
+    background-color: rgb(147, 206, 229);
+    border: 2px solid rgb(123, 163, 196);
+    padding: 5px;
+    margin-top: 5px;
+}
+ 
+.div1
+{
+    padding-top: 5px;
+    width: 100%;
+    height: max-content;
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+    margin-bottom: 5px;
+    text-align: center;
+
+}
+.div2
+{
+    width: auto ;
+    border: 1;
+    align-self: flex-start;
+    flex: 0 0 30%;
+    margin-top: 2px;
+}
+
+.div3
+{
+    max-height: 13500px;
+    width: auto ;
+    height: max-content;
+    order: 1;
+    align-self: flex-start;
+    flex: 0 0 33%;
+    margin-top: 2px;
+}
+
+.div4
+{
+    width: auto ;
+    height: max-content;
+    order: 1;
+    align-self: flex-start;
+    flex: 0 0 30%;
+    margin-top: 2px;
+}
+
+ 
+.p1 {
+   text-align: justify;
+}
+
+
+.container2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between  ;
+    align-items: stretch;
+    align-content: space-between;
+    max-width: 1500px;
+    min-width: 55px;
+    height: auto;
+}
+.head1{
+    width: 1500px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.body1{
+    width: auto ;
+    order: 1;
+    align-self: flex-start;
+    flex: 0 0 23%;
+    margin-top: 2px;
+}
+
+
+#menu_toggle, [for=menu_toggle]{
+    display: none;
+}
+
+.menu__box{
+    display: none;
+}
+input{
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .body1{
+        width: auto ;
+        order: 1;
+        align-self: flex-start;
+        flex: 0 0 97%;
+        margin-top: 2px;
+    }
+
+    .menu__box{
+        display: block;
+    }
+    input{
+        display: block;
+    }
+
+    #menu__toggle {
+        opacity: 0;
+      }
+    
+      .menu__btn {
+        display: flex; 
+        align-items: center;  
+        position: relative;
+        top: 20px;
+        left: 20px;  width: 26px;
+        height: 26px;  cursor: pointer;
+        z-index: 1;
+      }
+    
+      .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+      display: block;
+      position: absolute;  width: 100%;
+      height: 2px;  background-color: #616161;
+    }
+    
+    .menu__btn > span::before {
+        content: '';
+        top: -8px;
+      }
+      .menu__btn > span::after {
+        content: '';
+        top: 8px;
+      }
+    
+      .menu__box {
+        display: block;
+        position: relative  ;
+        visibility: hidden;
+        top: 0;
+        left: -100%;  width: 300px;
+        height: 100%;  margin: 0;
+        padding: 20px 0; margin-top: 5px;  list-style: none;
+        text-align: center;  background-color: #ECEFF1;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+      }
+    
+      .menu__item {
+        display: block;
+        padding: 12px 24px;  color: #333;  font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 600;  text-decoration: none;
+      }
+      .menu__item:hover {
+        background-color: #CFD8DC;
+      }
+    
+      #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+      #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        left: 0;
+      }
+}
+.container3{
+    margin-top: 25px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: space-between;
+    max-width: 1500px;
+    min-width: 50px;
+    height: auto;
+}
+.task{
+    box-sizing: border-box;
+    height: 300px;
+    width: 450px;
+    order: 1;
+    align-self: flex-start;
+    flex: 0 2 ;
+    margin-top: 10px;
+}
+img{
+    width: 300px;
+    height: 210px;
+}
+figcaption{
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+    color: #2a2929;
+    background-color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media screen and (max-width: 480px) {
+    figcaption{
+        color: red;
+    }
+}
+/*Исправила фотогалерею в уменьшенном виде*/
+@media screen and (max-width: 1280px) {
+   
+    figure{
+        max-width: 100%;    
+        max-height: 100%;
+    }
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    figcaption{
+        max-width: 100%;    
+        max-height: 100%;
+        
+    }
+    
+}
+    </style>
+</head>
+<body>
+    <main class="main">
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>  <ul class="menu__box">
+              <li><a class="menu__item" href="#1">Договоренность</a></li>
+              <li><a class="menu__item" href="#2">Дополнительные задания</a></li>
+              <li><a class="menu__item" href="#3">Тяни да не затягивай</a></li>
+              <li><a class="menu__item" href="#4">Никак</a></li>
+            </ul>
+          </div>
+        <div class="container2">
+            <div class="head1">
+                <h1>ЛАЙФХАК: КАК ИЗБЕЖАТЬ ОТЧИСЛЕНИЯ ИЗ ВУЗА?</h1>    
+            </div>
+            <div class="body1">
+                    <h2><a name="1"></a>Договоренность</h2>
+                    <p> Это самый простой и мирный способ ликвидации долгов. Здесь студенту предстоит найти подход общий язык с преподавателями по тем предметам, где у него накопились «хвосты», из-за которых его могут отчислить. Как правило, для их «отработки» достаточно выполнить дополнительные задания (подготовить реферат, доклад, презентацию), рассказать пропущенные темы, решить кейс и пр. Обратите внимание, что данный вариант – неофициальный и нелегальный способ. Поэтому не стоит тянуть до последнего. Важно оперативно связаться с педагогом и постараться установить с ним контакт, определить дату «ликвидации долга», подготовиться к ней и пр.</p>
+            </div>
+            <div class="body1">
+                <h2><a name="2">Выполнение дополнительных заданий для пополнения рейтинга</a></h2>
+               <p>
+                Данная миссия реализуется в тех заведениях, где действует рейтинговая оценка успеваемости, но и в классической модели воспитания специалистов она имеет место быть. В этом случае студенту выдают задания с уточнением сроков сдачи. За каждое выполненное упражнение или проект он получает определенное количество баллов, чтобы набрать «минимум» для получения допуска к аттестации (зачету или экзамену).
+               </p>
+
+               </div>
+            <div class="body1">
+                <h2><a name="3">Тяни, да не затягивай.</a></h2>
+                <p>Несмотря на то, что академическая задолженность растет в геометрической прогрессии, важно оперативно реагировать на нее. Но в некоторых случаях спешка может нанести еще больший урон: провал на очередном экзамене или зачете увеличит «хвост». В этом деле важно знать меру и правильно расставлять приоритеты. Если имеется шанс быстро перекрыть «хвосты», то им грех не воспользоваться. В случае напряженной ситуации и слабой подготовки, нужно плыть «по течению»: сдавать все остальные дисциплины и готовиться к пересдаче в специально отведенные дни (они как правило завершают сессию).</p>
+
+                </div>
+            <div class="body1">
+                <h2><a name="4">Поставить свечку онлайн</a></h2>
+                <p>Я на лекции сижу, </p>
+                  <p>Я на лектора гляжу, </p>
+                  <p>Чем он больше загружает,</p> 
+                 <p>Тем я больше торможу.</p>
+
+                </div>
+         </div>
+    </main>
+</body>
+</html>

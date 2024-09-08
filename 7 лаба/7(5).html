@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            justify-content: center;
+    display: flex;
+    height: 700px;
+    width: 700px;
+    border: 2px solid rgb(247, 0, 255);
+    animation: d1 5s linear infinite;}
+    
+
+@keyframes d1{
+    0% {background-image: url(cat1.jpg)}
+20%{ background-image: url(cat2.jpg)}
+40%{ background-image: url(cat3.jpg)}
+60%{ background-image: url(cat2.jpg)}  
+80%{ background-image: url(cat1.jpg)}
+100%{background-image: url(cat3.jpg)}
+}
+ h1{
+            animation: cat 5s infinite;
+            animation-direction: alternate ;
+            text-align: center;
+        }
+
+        @keyframes cat{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 80%;
+            }
+
+        }
+         </style>
+        </head>
+        <body>
+            <h1 id="lb5">Опять коты</h1>
+            <div></div>
+        </body>
+</html>

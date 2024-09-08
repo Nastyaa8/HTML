@@ -1,0 +1,64 @@
+.box1 {
+    display: inline;
+ width:200px;
+ height: 200px;
+ margin: 10px; 
+ border-width: 10px;
+  border-style: outset;
+  border-color:  rgb(172, 15, 15);
+}
+
+.box2 {
+    display: inline;
+    width:100px;
+    height: 100px;
+    margin: 10px;
+    border-width: 10px;
+     border-style:  dashed;
+     border-color: rgb(13, 172, 13)
+}
+.box3 {
+    display: inline;
+    width:100px;
+    height: 100px;
+    margin: 10px;
+    border-width: 10px;
+     border-style:  dotted;
+     border-color: rgb(14, 14, 197)
+}
+.box4 {
+    display: inline;
+    width:100px;
+    height: 100px;
+    margin: 10px;
+    border-width: 10px;
+     border-style:  double;
+     border-color: rgb(20, 174, 217)
+}
+.box5 {
+    display: inline;
+    width:100px;
+    height: 100px;
+    margin: 10px;
+    border-width: 10px;
+     border-style:  groove;
+     border-color: rgb(209, 16, 235)
+}
+.box6 {
+    display: inline;
+    width:100px;
+    height: 100px;
+    margin: 10px;
+    border-width: 10px;
+     border-style:  inset;
+     border-color: rgb(208, 242, 14)
+}
+.box7 {
+    display: inline;
+    width:100px;
+    height: 100px;
+    margin: 10px;
+    border-width: 10px;
+     border-style:  solid;
+     border-color: rgb(4, 5, 0) 
+}

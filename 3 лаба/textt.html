@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @font-face {
+        font-family: 'Comfortaa';
+        src: url(fonts/Comfortaa.ttf);
+    }
+    @font-face{
+        font-family: 'Exo2';
+        src: url(fonts/Exo2.ttf)
+    }
+    @font-face{
+        font-family: 'Carveat';
+        src: url(fonts/Carveat.ttf)
+    }
+    h1{
+        font-size: 45px;
+        text-transform: lowercase;
+        font-weight: bold;
+        text-align:center;
+        margin: 0;
+        font-family: 'Carveat';
+    }
+    p:first-letter{
+        color:white;
+        font-weight:bold ;
+        font-size: 45px;
+        background-color: hsla(275, 100%, 10%, 1);
+    }
+h2{
+  margin-bottom: 1.2em;
+  margin-top: 0.2rem;
+  padding-top: 25px;
+  text-align: left;
+  font-family: 'Exo2';
+}
+p{
+    font-size: 20px;
+    line-height: 200%;
+    margin-bottom: 0;
+    margin-top: 0%;
+    text-indent: 25px;
+    font-family: 'Comfortaa';
+}
+ol li {
+    list-style-type: none;
+    counter-increment: item;
+}
+ol li::before {
+    content:counter(item,upper-roman)".";
+    color: rgb(104,110,198);
+}
+p{
+    color:rgb(42, 152, 215);
+}
+</style>
+<body background="https://catherineasquithgallery.com/uploads/posts/2021-02/1612752338_96-p-goluboi-fon-s-lapkami-141.jpg">
+    <h1>Крутые котики</h1>
+    <h2>Почему надо любить котиков</h2>
+    <p>Кошек можно (и нужно) любить за их чудесное мурлыканье. Оно очень мелодично, оно успокаивает и придает уюта домашней обстановке. Кошек любят за мягкие и когтистые лапки. Они замечательно массируют больные места. Просто надо аккуратно с ними обращаться, чтобы не пострадать от острых коготков. Но при должном навыке все достижимо. А еще кошки – удивительно независимы. И они иногда так уморительно высокомерно снисходят до общества человека.</p>
+    <h2>Факты о кошках</h2>
+    <p>Обожает ласку и поглаживания</p>
+    <p>Покладистый характер, будет слушаться хозяина, чтобы его не обидеть</p>
+    <ol type="i"><h2>Плюсы:</h2>
+    <li><span>Кошки отлично снимают стресс, избавляют от бессонницы и раздражительности. Также у владельцев кошек снижается вероятность возникновения астмы (кроме тех, у кого аллергия на кошачью шерсть) и уменьшается риск умереть от сердечного приступа.</span></li>
+    <li><span>Кошки не требуют от вас так много времени, как, например, собаки. Они достаточно независимы и смогут без ущерба для собственной психики находится дома в одиночестве, пока вы на работе.</span></li>
+    <li><span>Кошек не надо выгуливать по нескольку раз в день. Достаточно просто иметь лоток с наполнителем в квартире.</span></li>
+    <li><span>Кошки чистоплотны. Треть всего времени бодрствования кошки занимаются собой — вылизывают шкурку и умываются.</span></li>
+    <li><span>Кошки обладают столь чувствительным носом, что могут почувствовать в воздухе газ, даже если вы его не чувствуете. Таким образом, эти животные могут предупредить хозяев об утечке газа в доме. Кроме того, согласно наблюдениям ученых, кошки способны предсказывать землетрясения, наводнения и даже погоду.</span></li>
+    </ol>
+</body>
+</html>

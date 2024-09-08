@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .grid {
+            display:grid;
+            grid-template-areas:  
+            "x y w"
+            "x2 y2 w2"
+            "x3 y3 w3";
+            grid-template-columns:50px 450px 225px;
+            grid-template-rows:150px 300px 90px;
+            grid-gap: 1%;
+            justify-content: center;
+        }
+        div>div{
+           background-color: rgb(24, 226, 41);
+            padding: 10PX;
+        }
+        .nav{
+            writing-mode: vertical-lr; 
+            text-orientation: upright;
+            padding-left: 5px;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+    </head>
+<body>
+        <div class="grid">
+            <div style="grid-area: x; grid-row: 1/3;" class="nav">
+                <a href="https://ru.wikipedia.org/wiki/HTML5">HTML5</a>
+                <a href="https://html5book.ru/css-css3/">CSS3</a>
+                <a href="https://habr.com/ru/articles/656245/">Grid-верстка</a>
+         
+            </div>
+            <div style="grid-area: y; grid-column: 2/4;">
+                <h2>CSS Grid</h1>
+                    CSS Grid это новая модель для создания шаблонов, оптимизированная для создания двумерных 
+                    макетов. Она идеально подходит для: шаблонов сайтов, форм, галерей и всего, что требует точного 
+                    и отзывчивого позиционирования.
+            </div>
+            <div style="grid-area: y2; grid-row: 2/3;">
+                Спецификация CSS3 — это неоспоримое будущее в области декоративного
+                 оформления веб-страниц, и ее разработка еще далека от завершения. Большинство
+                  модулей все еще продолжает совершенствоваться и модифицироваться, и ни один браузер
+                   не поддерживает все модули. Это означает, что CSS3 испытывает такие же сложности,
+                    как и HTML5. Веб-разработчикам нужно решать, какие возможности использовать, а какие
+                     игнорировать, а также каким образом заполнить зияющие пробелы в браузерной поддержке.
+            </div>
+            <div style="grid-area: w2; grid-row: 2/3;">
+                Grid модуль для CSS был разработан рабочей группой CSS для того, чтобы сделать создание шаблонов 
+                в CSS максимально удобным. Он попал в рекомендации по официальному внедрению в феврале 2017 года,
+                 а основные бразуеры начали его поддержку уже в марте 2017 года.
+            </div>
+            <div style="grid-area: x3; grid-column: 1/4;">
+                Grid шаблон работает по системе сеток. Grid это набор пересекающихся горизонтальных и
+                 вертикальных линий, которые создают размерность и позиционируют систему координат для контента
+                  в самом grid-контейнере.
+            </div>
+       </div>
+    
+</body>
+</html>

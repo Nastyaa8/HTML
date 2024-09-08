@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<bookstore  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="3.xsd">
+  <book category="фантастика">
+    <title>Название книги</title>
+    <author>Имя автора</author>
+    <year>2023</year>
+    <price>19.99</price>
+  </book>
+</bookstore>

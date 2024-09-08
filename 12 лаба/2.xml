@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<!DOCTYPE bookstore [
+  <!ELEMENT bookstore (book)>
+  <!ELEMENT book (title, author, year, price)>
+  <!ATTLIST book category CDATA #REQUIRED>
+  <!ELEMENT title (#PCDATA)>
+  <!ELEMENT author (#PCDATA)>
+  <!ELEMENT year (#PCDATA)>
+  <!ELEMENT price (#PCDATA)>
+]>
+<bookstore>
+  <book category="фантастика">
+    <title>Название книги</title>
+    <author>Имя автора</author>
+    <year>2023</year>
+    <price>19.99</price>
+  </book>
+</bookstore>  

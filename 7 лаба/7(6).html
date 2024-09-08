@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Document
+    </title>
+    <style>
+.a1{
+    width: 300px;
+    height: 300px;
+    animation: a1 5s infinite;
+}
+.a2{
+    width: 300px;
+    height: 300px;
+    border: 1px solid rgb(255, 0, 191);
+   
+    animation: a2 5s infinite;
+}
+.a3{
+    width: 300px;
+    height: 300px;
+    animation: a3 5s infinite;
+}
+.a4{
+    width: 300px;
+    height: 300px;
+    animation: a4 5s infinite;
+}
+.a5{
+    position:absolute;
+    right:50dvw;
+    width: 300px;
+    height: 300px;
+    animation: a5 5s linear infinite;
+}
+
+@keyframes a1{
+    0%{
+transform: translateX(0px);
+}
+50%{
+    transform: translateX(200px);
+}
+100%{
+    transform: translateX(0px);
+}}
+
+@keyframes a2{
+    0%{
+transform: translateX(0px);
+border-radius: 50%;
+}
+50%{
+    transform: translateX(800px);
+    border-radius:0%;
+}
+100%{
+    transform: translateX(0px);
+    border-radius:50%;
+}
+}
+
+@keyframes a3{
+    0%{transform: translateX(-100%);}
+    100%{transform: translateX(500%);
+}}
+
+@keyframes a4{
+    0%{
+transform: translateY(0px);
+}
+50%{
+    transform: translateY(50px);
+}
+100%{
+    transform: translateY(0px);
+}}
+@keyframes a5{
+    0% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: 200px;
+    top: 0;
+  }
+  50% {
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    left: 0;
+    top: 200px;
+  }
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
+
+h1{
+            animation: sss 5s infinite;
+            animation-direction: alternate ;
+            text-align: center;
+        }
+
+        @keyframes sss{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 80%;
+            }
+
+        }
+    </style>
+</head>
+<body>
+<h1 id="lb6">Прикольно</h1>
+    <img class="a1" src="C:\Users\Hasee\Pictures\Saved Pictures\kirby-walk.gif">
+    <P></P>
+    <img class="a2" src="C:\Users\Hasee\Pictures\Saved Pictures\kirby-walk.gif">
+    <P></P>
+    <img class="a3" src="C:\Users\Hasee\Pictures\Saved Pictures\kirby-walk.gif">
+    
+    <p></p>
+    <img class="a4" src="C:\Users\Hasee\Pictures\Saved Pictures\kirby-walk.gif">
+    <p></p>
+    <img class="a5" src="C:\Users\Hasee\Pictures\Saved Pictures\kirby-walk.gif">
+</body>

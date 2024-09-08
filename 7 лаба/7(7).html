@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<HEAD>
+    <title>Document</title>
+    <style>
+        h1{
+            animation: g1 5s infinite;
+            animation-direction: alternate ;
+            text-align: center;
+        }
+
+        @keyframes g1{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 80%;
+            }
+        }
+        @keyframes g2{
+            0%{
+                color: rgb(255, 0, 0);
+                transition-duration: 5s;
+            }
+            14.2%{
+                color:rgb(85, 0, 255);
+                transition-duration: 5s;}
+28.4%{
+                color:rgb(255, 0, 225);
+                transition-duration: 5s;
+            }
+            42.6%{
+                color:rgb(128, 0, 73); transition-duration: 5s;}
+            56.8%{
+                color:rgb(0, 166, 232); transition-duration: 5s;
+            }
+            71%{
+                color:rgb(255, 0, 106); transition-duration: 5s;}
+            85.2%{
+                color:rgb(119, 128, 0); transition-duration: 5s;
+            }
+            100%{
+                color:red; transition-duration: 5s;
+            }
+        }
+        div{
+ display: inline-block;  
+ width: 120px;
+ height: 120px;
+ border: 3px solid rgb(255, 0, 200);
+ overflow: hidden;  
+ animation: g2 35s infinite;  
+        }  
+    </style>
+</HEAD>
+<body>
+    <h1 id="lb7">Эм разными цветами</h1>
+   <div>ЭММММММММММ
+    ЭММММММММММММММ
+    ЭММММММММММММММ
+    ЭММММММММММММММ
+    ЭММММММММММММММ
+    ЭММММММММММММММ
+    ЭММММММММММММММ
+   </div>
+</body>

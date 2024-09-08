@@ -1,0 +1,46 @@
+h1,h2,h3
+{
+    color:rgb(134,7,124.0.822);
+    font:16pt Monotype Corsiva;
+}
+ul.y li{
+    color: red;
+    font: 18pt Times New Roman;
+}
+ul.x li{
+    color:yellow;
+    font: 20pt Times New Roman;
+}
+ul.i li{
+    color:green;
+    font: 22pt Times New Roman;
+}
+table tr td
+{
+    color:rgb(89,193,231);
+}
+p{text-indent: 40px;
+    font-size: 20px;
+    margin-top: 0; /* Отступ сверху */
+margin-bottom: 0; 
+
+ }
+img.img1{
+width:200px;
+height:200px;           
+position:fixed;
+right:1%;
+}  
+img.img2{
+width:600px;
+height:400px;           
+float: left;
+} 
+img.img3{
+width:600px;
+height:400px;           
+float: right;
+} 
+p.p3{
+ clear: left;
+}      

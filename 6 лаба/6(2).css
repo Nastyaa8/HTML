@@ -1,0 +1,13 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+figure {
+    width: 17%; 
+    margin-bottom: 20px;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
